@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/windows/2007/BusinessDataCatalog" Name="Lofasz">
+  <LobSystems>
+    <LobSystem Name="Lofasz" Type="DotNetAssembly">
+      <LobSystemInstances>
+        <LobSystemInstance Name="Lofasz" />
+      </LobSystemInstances>
+      <Entities>
+        <Entity Name="Entity1" Namespace="SharePointProject1.Lofasz" EstimatedInstanceCount="1000" Version="1.0.0.4">
+          <Properties>
+            <Property Name="Class" Type="System.String">SharePointProject1.Lofasz.Entity1Service, Lofasz</Property>
+          </Properties>
+          <Identifiers>
+            <Identifier Name="Identifier2" TypeName="System.String" />
+            <!-- TODO: Change the name of the ID and if needed the TypeName of your identifier. -->
+          </Identifiers>
+          <Methods>
+            <!-- start finder method -->
+            <Method Name="ReadList">
+              <!-- TODO: Change the name of the method if needed. -->
+              <Parameters>
+                <Parameter Direction="Return" Name="returnParameter">
+                  <TypeDescriptor TypeName="System.Collections.Generic.IEnumerable`1[[SharePointProject1.Lofasz.Entity1, Lofasz]]" IsCollection="true" Name="Entity1List">
+                    <TypeDescriptors>
+                      <TypeDescriptor TypeName="SharePointProject1.Lofasz.Entity1, Lofasz" Name="Entity1">
+                        <TypeDescriptors>
+                          <TypeDescriptor TypeName="System.String" IdentifierName="Identifier2" Name="Identifier2" />
+                          <TypeDescriptor TypeName="System.String" Name="Message" />
+                          <!-- TODO: Add TypeDescriptors when you add properties to Entity1. -->
+                        </TypeDescriptors>
+                      </TypeDescriptor>
+                    </TypeDescriptors>
+                  </TypeDescriptor>
+                </Parameter>
+              </Parameters>
+              <MethodInstances>
+                <MethodInstance Type="Finder" ReturnParameterName="returnParameter" Default="true" Name="ReadList" DefaultDisplayName="Entity1 List" />
+              </MethodInstances>
+            </Method>
+            <!-- end finder method -->
+            <!-- start specific finder method -->
+            <Method Name="ReadItem">
+              <Parameters>
+                <Parameter Direction="In" Name="id">
+                  <TypeDescriptor TypeName="System.String" IdentifierName="Identifier2" Name="Identifier2" />
+                </Parameter>
+                <Parameter Direction="Return" Name="returnParameter">
+                  <TypeDescriptor TypeName="SharePointProject1.Lofasz.Entity1, Lofasz" Name="Entity1">
+                    <TypeDescriptors>
+                      <TypeDescriptor TypeName="System.String" IdentifierName="Identifier2" Name="Identifier2" />
+                      <TypeDescriptor TypeName="System.String" Name="Message" />
+                      <!-- TODO: Add TypeDescriptors when you add properties to Entity1. -->
+                    </TypeDescriptors>
+                  </TypeDescriptor>
+                </Parameter>
+              </Parameters>
+              <MethodInstances>
+                <MethodInstance Type="SpecificFinder" ReturnParameterName="returnParameter" Default="true" Name="ReadItem" DefaultDisplayName="Read Entity1" />
+              </MethodInstances>
+            </Method>
+            <!-- end specific finder method -->
+          </Methods>
+        </Entity>
+      </Entities>
+    </LobSystem>
+  </LobSystems>
+</Model>

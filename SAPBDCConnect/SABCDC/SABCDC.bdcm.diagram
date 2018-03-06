@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<minimalLanguageDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="SABCDC">
+  <modelRootMoniker Name="/SABCDC" />
+  <nestedChildShapes>
+    <entityShape Id="e8de826e-99c2-4513-b3ec-e524ccd5af52" absoluteBounds="0.5, 1.375, 1.5, 1.59568359375">
+      <entityMoniker name="SAPBDCConnect.SABCDC.EmployeeEntity" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c211a2f8-50ed-4592-ac17-b112ab5fabf8" absoluteBounds="0.515, 1.7850000000000001, 1.4700000000000002, 0.44169108072916663" name="Identifiers" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="aea303f5-eca1-48e2-b5b6-e9204800baa2" absoluteBounds="0.515, 2.2366910807291669, 1.4700000000000002, 0.63399251302083326" name="Methods" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </entityShape>
+    <entityShape Id="74139841-187c-4332-b043-8d54d139f454" absoluteBounds="2.625, 1.375, 1.5, 1.59568359375">
+      <entityMoniker name="SAPBDCConnect.SABCDC.CompanyEntity" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e9012f02-d538-4282-955b-f71ed7bcc142" absoluteBounds="2.64, 1.7850000000000001, 1.4700000000000002, 0.44169108072916663" name="Identifiers" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="8b3ba067-5e9f-423c-883c-71d73af33d9f" absoluteBounds="2.64, 2.2366910807291669, 1.4700000000000002, 0.63399251302083326" name="Methods" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </entityShape>
+    <entityShape Id="b28e25fd-fbc2-46c4-89a0-23a5084658c4" absoluteBounds="4.75, 1.375, 1.875, 1.59568359375">
+      <entityMoniker name="SAPBDCConnect.SABCDC.BusinessAreaEntity" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6c0d1dcb-207e-4e24-820a-1020d6930a70" absoluteBounds="4.765, 1.7850000000000001, 1.8450000000000002, 0.44169108072916663" name="Identifiers" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="0f7fa359-374a-472b-9a73-6fd69f296a36" absoluteBounds="4.765, 2.2366910807291669, 1.8450000000000002, 0.63399251302083326" name="Methods" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </entityShape>
+  </nestedChildShapes>
+</minimalLanguageDiagram>

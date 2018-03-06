@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/windows/2007/BusinessDataCatalog" Name="SABCDC">
+  <LobSystems>
+    <LobSystem Name="SABCDC" Type="DotNetAssembly">
+      <LobSystemInstances>
+        <LobSystemInstance Name="SABCDC" />
+      </LobSystemInstances>
+      <Entities>
+        <Entity Name="EmployeeEntity" Namespace="SAPBDCConnect.SABCDC" EstimatedInstanceCount="1000" Version="1.0.0.32">
+          <Properties>
+            <Property Name="Class" Type="System.String">SAPBDCConnect.SABCDC.EmployeeEntityService, SABCDC</Property>
+          </Properties>
+          <Identifiers>
+            <Identifier Name="PeronalNr" TypeName="System.String" />
+            <!-- TODO: Change the name of the ID and if needed the TypeName of your identifier. -->
+          </Identifiers>
+          <Methods>
+            <!-- start finder method -->
+            <Method Name="ReadList">
+              <!-- TODO: Change the name of the method if needed. -->
+              <Parameters>
+                <Parameter Direction="Return" Name="returnParameter">
+                  <TypeDescriptor TypeName="System.Collections.Generic.IEnumerable`1[[SAPBDCConnect.SABCDC.EmployeeEntity, SABCDC]]" IsCollection="true" Name="EmployeeEntityList">
+                    <TypeDescriptors>
+                      <TypeDescriptor TypeName="SAPBDCConnect.SABCDC.EmployeeEntity, SABCDC" Name="EmployeeEntity" IsCollection="false">
+                        <TypeDescriptors>
+                          <TypeDescriptor TypeName="System.String" IdentifierName="PeronalNr" Name="PeronalNr" />
+                          <TypeDescriptor TypeName="System.String" Name="Name" />
+                          <!-- TODO: Add TypeDescriptors when you add properties to Entity1. -->
+                          <TypeDescriptor Name="OrgID" TypeName="System.String" />
+                          <TypeDescriptor Name="Organisation" TypeName="System.String" />
+                          <TypeDescriptor Name="JobID" TypeName="System.String" />
+                          <TypeDescriptor Name="Job" TypeName="System.String" /></TypeDescriptors>
+                      </TypeDescriptor>
+                    </TypeDescriptors>
+                  </TypeDescriptor>
+                </Parameter>
+              </Parameters>
+              <MethodInstances>
+                <MethodInstance Type="Finder" ReturnParameterName="returnParameter" Default="true" Name="ReadList" DefaultDisplayName="Entity1 List" />
+              </MethodInstances>
+            </Method>
+            <!-- end finder method -->
+            <!-- start specific finder method -->
+            <Method Name="ReadItem">
+              <Parameters>
+                <Parameter Direction="In" Name="PeronalNr">
+                  <TypeDescriptor TypeName="System.String" IdentifierName="PeronalNr" Name="PeronalNr" />
+                </Parameter>
+                <Parameter Direction="Return" Name="returnParameter">
+                  <TypeDescriptor TypeName="SAPBDCConnect.SABCDC.EmployeeEntity, SABCDC" Name="EmployeeEntity" IsCollection="false">
+                    <TypeDescriptors>
+                      <TypeDescriptor TypeName="System.String" IdentifierName="PeronalNr" Name="PeronalNr" />
+                      <TypeDescriptor TypeName="System.String" Name="Name" />
+                      <!-- TODO: Add TypeDescriptors when you add properties to Entity1. -->
+                      <TypeDescriptor Name="OrgID" TypeName="System.String" />
+                      <TypeDescriptor Name="Organisation" TypeName="System.String" />
+                      <TypeDescriptor Name="JobID" TypeName="System.String" />
+                      <TypeDescriptor Name="Job" TypeName="System.String" /></TypeDescriptors>
+                  </TypeDescriptor>
+                </Parameter>
+              </Parameters>
+              <MethodInstances>
+                <MethodInstance Type="SpecificFinder" ReturnParameterName="returnParameter" Default="true" Name="ReadItem" DefaultDisplayName="Read Entity1" />
+              </MethodInstances>
+            </Method>
+            <!-- end specific finder method -->
+          </Methods>
+        </Entity>
+        <Entity Name="CompanyEntity" Namespace="SAPBDCConnect.SABCDC" EstimatedInstanceCount="1000" Version="1.0.0.48">
+          <Properties>
+            <Property Name="Class" Type="System.String">SAPBDCConnect.SABCDC.CompanyEntityService, SABCDC</Property>
+          </Properties>
+          <Identifiers>
+            <Identifier Name="Company" TypeName="System.String" />
+          </Identifiers>
+          <Methods>
+            <Method Name="ReadList">
+              <Parameters>
+                <Parameter Name="returnParameter" Direction="Return">
+                  <TypeDescriptor Name="CompanyList" TypeName="System.Collections.Generic.IEnumerable`1[[SAPBDCConnect.SABCDC.CompanyEntity, SABCDC]]" IsCollection="true">
+                    <TypeDescriptors>
+                      <TypeDescriptor Name="CompanyEntity" TypeName="SAPBDCConnect.SABCDC.CompanyEntity, SABCDC" IsCollection="false">
+                        <TypeDescriptors>
+                          <TypeDescriptor Name="Company" TypeName="System.String" IdentifierName="Company" />
+                          <TypeDescriptor Name="Name" TypeName="System.String" /></TypeDescriptors></TypeDescriptor></TypeDescriptors></TypeDescriptor></Parameter>
+              </Parameters>
+              <MethodInstances>
+                <MethodInstance Type="Finder" ReturnParameterName="returnParameter" Default="true" Name="ReadList" DefaultDisplayName="Company List" />
+              </MethodInstances>
+              </Method>
+            <Method Name="ReadItem">
+              <Parameters>
+                <Parameter Name="Company" Direction="In">
+                  <TypeDescriptor Name="Company" TypeName="System.String" IdentifierName="Company" /></Parameter>
+                <Parameter Name="returnParameter" Direction="Return">
+                  <TypeDescriptor Name="CompanyEntity" TypeName="SAPBDCConnect.SABCDC.CompanyEntity, SABCDC" IsCollection="false">
+                    <TypeDescriptors>
+                      <TypeDescriptor Name="Company" TypeName="System.String" IdentifierName="Company" />
+                      <TypeDescriptor Name="Name" TypeName="System.String" /></TypeDescriptors></TypeDescriptor></Parameter>
+              </Parameters>
+              <MethodInstances>
+                <MethodInstance ReturnParameterName="returnParameter" Default="true" Name="ReadItem" DefaultDisplayName="Read Company" Type="SpecificFinder" />
+              </MethodInstances></Method>
+          </Methods></Entity>
+        <Entity Name="BusinessAreaEntity" Namespace="SAPBDCConnect.SABCDC" Version="1.0.0.39">
+          <Properties>
+            <Property Name="Class" Type="System.String">SAPBDCConnect.SABCDC.BusinessAreaEntityService, SABCDC</Property>
+          </Properties>
+          <Identifiers>
+            <Identifier Name="Code" TypeName="System.String" />
+          </Identifiers>
+          <Methods>
+            <Method Name="ReadList">
+              <Parameters>
+                <Parameter Name="returnParameter" Direction="Return">
+                  <TypeDescriptor Name="BusinessAreaList" TypeName="System.Collections.Generic.IEnumerable`1[[SAPBDCConnect.SABCDC.BusinessAreaEntity, SABCDC]]" IsCollection="true">
+                    <TypeDescriptors>
+                      <TypeDescriptor Name="BusinessAreaEntity" TypeName="SAPBDCConnect.SABCDC.BusinessAreaEntity, SABCDC" IsCollection="false">
+                        <TypeDescriptors>
+                          <TypeDescriptor Name="Code" TypeName="System.String" IdentifierName="Code" />
+                          <TypeDescriptor Name="Name" TypeName="System.String" /></TypeDescriptors></TypeDescriptor></TypeDescriptors></TypeDescriptor></Parameter>
+              </Parameters>
+              <MethodInstances>
+                <MethodInstance Type="Finder" ReturnParameterName="returnParameter" Default="true" Name="ReadList" DefaultDisplayName="BusinessArea List" />
+              </MethodInstances></Method>
+            <Method Name="ReadItem">
+              <Parameters>
+                <Parameter Name="Code" Direction="In">
+                  <TypeDescriptor Name="Code" TypeName="System.String" IdentifierName="Code" /></Parameter>
+                <Parameter Name="returnParameter" Direction="Return">
+                  <TypeDescriptor Name="BusinessAreaEntity" TypeName="SAPBDCConnect.SABCDC.BusinessAreaEntity, SABCDC" IsCollection="false">
+                    <TypeDescriptors>
+                      <TypeDescriptor Name="Code" TypeName="System.String" IdentifierName="Code" />
+                      <TypeDescriptor Name="Name" TypeName="System.String" /></TypeDescriptors></TypeDescriptor></Parameter>
+              </Parameters>
+              <MethodInstances>
+                <MethodInstance ReturnParameterName="returnParameter" Default="true" Name="ReadItem" DefaultDisplayName="Read BusinessArea" Type="SpecificFinder" />
+              </MethodInstances></Method>
+          </Methods></Entity>
+      </Entities>
+    </LobSystem>
+  </LobSystems>
+</Model>

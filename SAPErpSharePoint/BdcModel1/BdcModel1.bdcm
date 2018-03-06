@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Model	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns="http://schemas.microsoft.com/windows/2007/BusinessDataCatalog"
+        Name="BdcModel1">
+  <LobSystems>
+    <LobSystem Name="BdcModel1" Type="DotNetAssembly">
+      <LobSystemInstances>
+        <LobSystemInstance Name="BdcModel1"/>
+      </LobSystemInstances>
+      <Entities>
+        <Entity Name="Entity1" Namespace="SAPErpSharePoint.BdcModel1" EstimatedInstanceCount="1000" Version="1.0.0.0">
+          <Properties>
+            <Property Name="Class" Type="System.String">SAPErpSharePoint.BdcModel1.Entity1Service, BdcModel1</Property>
+          </Properties>
+          <Identifiers>
+            <Identifier Name="Identifier1" TypeName="System.String" />
+            <!-- TODO: Change the name of the ID and if needed the TypeName of your identifier. -->
+          </Identifiers>
+          <Methods>
+            <!-- start finder method -->
+            <Method Name="ReadList">
+              <!-- TODO: Change the name of the method if needed. -->
+              <Parameters>
+                <Parameter Direction="Return" Name="returnParameter">
+                  <TypeDescriptor TypeName="System.Collections.Generic.IEnumerable`1[[SAPErpSharePoint.BdcModel1.Entity1, BdcModel1]]" IsCollection="true" Name="Entity1List">
+                    <TypeDescriptors>
+                      <TypeDescriptor TypeName="SAPErpSharePoint.BdcModel1.Entity1, BdcModel1" Name="Entity1">
+                        <TypeDescriptors>
+                          <TypeDescriptor TypeName="System.String" IdentifierName="Identifier1" Name="Identifier1" />
+                          <TypeDescriptor TypeName="System.String" Name="Message" />
+                          <!-- TODO: Add TypeDescriptors when you add properties to Entity1. -->
+                        </TypeDescriptors>
+                      </TypeDescriptor>
+                    </TypeDescriptors>
+                  </TypeDescriptor>
+                </Parameter>
+              </Parameters>
+              <MethodInstances>
+                <MethodInstance Type="Finder" ReturnParameterName="returnParameter" Default="true" Name="ReadList" DefaultDisplayName="Entity1 List"/>
+              </MethodInstances>
+            </Method>
+            <!-- end finder method -->
+            <!-- start specific finder method -->
+            <Method Name="ReadItem">
+              <Parameters>
+                <Parameter Direction="In" Name="id">
+                  <TypeDescriptor TypeName="System.String" IdentifierName="Identifier1" Name="Identifier1" />
+                </Parameter>
+                <Parameter Direction="Return" Name="returnParameter">
+                  <TypeDescriptor TypeName="SAPErpSharePoint.BdcModel1.Entity1, BdcModel1" Name="Entity1">
+                    <TypeDescriptors>
+                      <TypeDescriptor TypeName="System.String" IdentifierName="Identifier1" Name="Identifier1" />
+                      <TypeDescriptor TypeName="System.String" Name="Message" />
+                      <!-- TODO: Add TypeDescriptors when you add properties to Entity1. -->
+                    </TypeDescriptors>
+                  </TypeDescriptor>
+                </Parameter>
+              </Parameters>
+              <MethodInstances>
+                <MethodInstance Type="SpecificFinder" ReturnParameterName="returnParameter" Default="true" Name="ReadItem" DefaultDisplayName="Read Entity1"/>
+              </MethodInstances>
+            </Method>
+            <!-- end specific finder method -->
+          </Methods>
+        </Entity>
+      </Entities>
+    </LobSystem>
+  </LobSystems>
+</Model>

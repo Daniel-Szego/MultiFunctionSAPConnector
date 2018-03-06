@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<minimalLanguageDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="BdcModel1">
+  <modelRootMoniker Name="/BdcModel1" />
+  <nestedChildShapes>
+    <entityShape Id="2dad6871-e78b-4e3a-ae36-3c59555f0bef" absoluteBounds="0.5, 1.375, 1.5, 1.427958984375">
+      <entityMoniker name="SAPErpSharePoint.BdcModel1.Entity1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6b7eb8d7-9f40-414a-97c3-d98f7ffe7ef5" absoluteBounds="0.515, 1.7850000000000001, 1.4700000000000002, 0.37180582682291663" name="Identifiers" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="4033ecf0-8637-49e3-8a3b-d9ea4a09a9cf" absoluteBounds="0.515, 2.1668058268229169, 1.4700000000000002, 0.53615315755208326" name="Methods" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </entityShape>
+  </nestedChildShapes>
+</minimalLanguageDiagram>

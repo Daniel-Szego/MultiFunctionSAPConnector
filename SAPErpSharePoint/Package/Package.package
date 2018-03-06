@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="cd6938b3-57cf-4954-8014-2736cd5295e8" solutionId="cd6938b3-57cf-4954-8014-2736cd5295e8" resetWebServer="false" sharePointProductVersion="15.0" name="SAPErpSharePoint" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="cffff238-acad-45e3-b9a9-795dc9b40d6c" />
+    <featureReference itemId="959eba90-aeb7-4c78-9a72-b05794cf2e3a" />
+    <featureReference itemId="f5dc8b0a-c3f2-4acc-960e-767d6231508d" />
+  </features>
+</package>

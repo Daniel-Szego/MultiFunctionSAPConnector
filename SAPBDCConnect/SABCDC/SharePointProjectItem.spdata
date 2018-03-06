@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.BusinessDataConnectivity" DefaultFile="SABCDC.bdcm" FeatureReceiverClass="Microsoft.Office.SharePoint.ClientExtensions.Deployment.ImportModelReceiver" FeatureReceiverAssembly="Microsoft.Office.SharePoint.ClientExtensions, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Farm" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="SABCDC.bdcm" Target="SABCDC\" Type="ElementFile" />
+    <ProjectOutputFile ProjectId="745f8866-2b97-400b-bb25-b87e7fc3e439" ProjectPath="SAPBDCConnect.csproj" Target="BdcAssemblies\" Type="ElementFile" />
+  </Files>
+  <FeatureProperties>
+    <FeatureProperty Key="IncrementalUpdate" Value="true" />
+    <FeatureProperty Key="ModelFileName" Value="$SharePoint.ProjectItem.Name$\SABCDC.bdcm" />
+    <FeatureProperty Key="SABCDC" Value="BdcAssemblies\$SharePoint.Project.AssemblyFileName$" />
+  </FeatureProperties>
+</ProjectItem>

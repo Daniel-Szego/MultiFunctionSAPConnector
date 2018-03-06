@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E804B8BD-964B-477D-881E-86F3A297F9C5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SAPErpSharePoint</RootNamespace>
+    <AssemblyName>SAPErpSharePoint</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="sapnco">
+      <HintPath>..\SAPErpConnect\bin\Debug\sapnco.dll</HintPath>
+    </Reference>
+    <Reference Include="sapnco_utils">
+      <HintPath>..\SAPErpConnect\bin\Debug\sapnco_utils.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BdcModel2\Entity1.cs" />
+    <Compile Include="BdcModel2\Entity1Service.cs" />
+    <Compile Include="BdcSAPSAP\Employee.cs" />
+    <Compile Include="BdcSAPSAP\EmployeeService.cs" />
+    <Compile Include="BDCSAP\Entity1.cs" />
+    <Compile Include="BDCSAP\Entity1Service.cs" />
+    <Compile Include="BDCSAP\EmployeeEntityService.cs" />
+    <Compile Include="BDCSAP\EmployeeEntity.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BdcModel2\BdcModel2.bdcm" />
+    <None Include="BdcModel2\BdcModel2.bdcm.diagram">
+      <DependentUpon>BdcModel2.bdcm</DependentUpon>
+    </None>
+    <None Include="BdcModel2\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{af167eb2-346e-43f7-85d1-d2fab1bff636}</SharePointProjectItemId>
+    </None>
+    <None Include="BdcSAPSAP\BdcSAPSAP.bdcm" />
+    <None Include="BdcSAPSAP\BdcSAPSAP.bdcm.diagram">
+      <DependentUpon>BdcSAPSAP.bdcm</DependentUpon>
+    </None>
+    <None Include="BdcSAPSAP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{156f42a7-271d-46d2-ba6b-843b99a6b9a4}</SharePointProjectItemId>
+    </None>
+    <None Include="BDCSAP\BDCSAP.bdcm" />
+    <None Include="BDCSAP\BDCSAP.bdcm.diagram">
+      <DependentUpon>BDCSAP.bdcm</DependentUpon>
+    </None>
+    <None Include="BDCSAP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0348de36-11e3-468d-8a02-3e9cece3515c}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{cffff238-acad-45e3-b9a9-795dc9b40d6c}</FeatureId>
+    </None>
+    <None Include="Features\Feature3\Feature3.feature">
+      <FeatureId>{959eba90-aeb7-4c78-9a72-b05794cf2e3a}</FeatureId>
+    </None>
+    <None Include="Features\Feature4\Feature4.feature">
+      <FeatureId>{f5dc8b0a-c3f2-4acc-960e-767d6231508d}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Package\Package.package">
+      <PackageId>{cd6938b3-57cf-4954-8014-2736cd5295e8}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SAPErpConnect\SAPErpConnect.csproj">
+      <Project>{9df83a72-c2e5-4a10-bb7c-4f66b6d92e78}</Project>
+      <Name>SAPErpConnect</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Feature3\Feature3.Template.xml">
+      <DependentUpon>Feature3.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Feature4\Feature4.Template.xml">
+      <DependentUpon>Feature4.feature</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

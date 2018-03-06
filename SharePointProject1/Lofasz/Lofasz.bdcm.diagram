@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<minimalLanguageDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Lofasz">
+  <modelRootMoniker Name="/Lofasz" />
+  <nestedChildShapes>
+    <entityShape Id="5d9b9dd2-cb75-4c4d-9389-d4a04ff944a3" absoluteBounds="0.5, 1.375, 1.5, 1.59568359375">
+      <entityMoniker name="SharePointProject1.Lofasz.Entity1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ae5a2188-1397-4a94-b322-e13559d25718" absoluteBounds="0.515, 1.7850000000000001, 1.4700000000000002, 0.44169108072916663" name="Identifiers" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="11ae2893-d2cf-41b3-95a0-4f0f9c629f05" absoluteBounds="0.515, 2.2366910807291669, 1.4700000000000002, 0.63399251302083326" name="Methods" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </entityShape>
+  </nestedChildShapes>
+</minimalLanguageDiagram>

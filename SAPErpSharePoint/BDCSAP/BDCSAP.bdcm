@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/windows/2007/BusinessDataCatalog" Name="BDCSAP">
+  <LobSystems>
+    <LobSystem Name="BDCSAP" Type="DotNetAssembly">
+      <LobSystemInstances>
+        <LobSystemInstance Name="BDCSAP" />
+      </LobSystemInstances>
+      <Entities>
+        <Entity Name="EmployeeEntity" Namespace="SAPErpSharePoint.BDCSAP" Version="1.0.0.10">
+          <Properties>
+            <Property Name="Class" Type="System.String">SAPErpSharePoint.BDCSAP.EmployeeEntityService, BDCSAP</Property>
+          </Properties>
+          <Identifiers>
+            <Identifier Name="PeronalNr" TypeName="System.String" />
+          </Identifiers>
+          <Methods>
+            <Method Name="ReadItem">
+              <Parameters>
+                <Parameter Name="parameter" Direction="In">
+                  <TypeDescriptor Name="parameterTypeDescriptor" TypeName="System.String" /></Parameter>
+              </Parameters></Method>
+            <Method Name="ReadList" />
+          </Methods></Entity>
+      </Entities>
+    </LobSystem>
+  </LobSystems>
+</Model>

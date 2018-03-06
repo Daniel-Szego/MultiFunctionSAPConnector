@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="5a88ba53-7c27-4f27-9d06-91d78493efe7" solutionId="5a88ba53-7c27-4f27-9d06-91d78493efe7" resetWebServer="false" sharePointProductVersion="15.0" name="SAPBDCConnect" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <customAssembly location="sapnco.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\SAPDlls\sapnco.dll" />
+    <customAssembly location="sapnco_utils.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\SAPDlls\sapnco_utils.dll" />
+    <projectOutputAssembly location="SAPErpConnect.exe" deploymentTarget="GlobalAssemblyCache" projectPath="..\SAPErpConnect\SAPErpConnect.csproj" />
+  </assemblies>
+  <features>
+    <featureReference itemId="27f84d93-aa81-43e7-a15c-8e36cdcb5614" />
+  </features>
+</package>

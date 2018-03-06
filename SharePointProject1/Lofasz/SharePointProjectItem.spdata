@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.BusinessDataConnectivity" DefaultFile="Lofasz.bdcm" FeatureReceiverClass="Microsoft.Office.SharePoint.ClientExtensions.Deployment.ImportModelReceiver" FeatureReceiverAssembly="Microsoft.Office.SharePoint.ClientExtensions, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Farm" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Lofasz.bdcm" Target="Lofasz\" Type="ElementFile" />
+    <ProjectOutputFile ProjectId="b5865b76-70b3-48bf-8f1b-2bcf3dd8d987" ProjectPath="SharePointProject1.csproj" Target="BdcAssemblies\" Type="ElementFile" />
+  </Files>
+  <FeatureProperties>
+    <FeatureProperty Key="IncrementalUpdate" Value="true" />
+    <FeatureProperty Key="Lofasz" Value="BdcAssemblies\$SharePoint.Project.AssemblyFileName$" />
+    <FeatureProperty Key="ModelFileName" Value="$SharePoint.ProjectItem.Name$\Lofasz.bdcm" />
+  </FeatureProperties>
+</ProjectItem>

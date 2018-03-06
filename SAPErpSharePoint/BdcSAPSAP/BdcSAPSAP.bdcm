@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/windows/2007/BusinessDataCatalog" Name="BdcSAPSAP">
+  <LobSystems>
+    <LobSystem Name="BdcSAPSAP" Type="DotNetAssembly">
+      <LobSystemInstances>
+        <LobSystemInstance Name="BdcSAPSAP" />
+      </LobSystemInstances>
+      <Entities>
+        <Entity Name="Employee" Namespace="SAPErpSharePoint.BdcSAPSAP" EstimatedInstanceCount="1000" Version="1.0.0.36">
+          <Properties>
+            <Property Name="Class" Type="System.String">SAPErpSharePoint.BdcSAPSAP.EmployeeService, BdcSAPSAP</Property>
+          </Properties>
+          <Identifiers>
+            <Identifier Name="PersonalNr" TypeName="System.String" />
+            <!-- TODO: Change the name of the ID and if needed the TypeName of your identifier. -->
+          </Identifiers>
+          <Methods>
+            <!-- start finder method -->
+            <Method Name="ReadList">
+              <!-- TODO: Change the name of the method if needed. -->
+              <Parameters>
+                <Parameter Direction="Return" Name="returnParameter">
+                  <TypeDescriptor TypeName="System.Collections.Generic.IEnumerable`1[[SAPErpSharePoint.BdcSAPSAP.Employee, BdcSAPSAP]]" IsCollection="true" Name="EmployeeList">
+                    <TypeDescriptors>
+                      <TypeDescriptor TypeName="SAPErpSharePoint.BdcSAPSAP.Employee, BdcSAPSAP" Name="Employee">
+                        <TypeDescriptors>
+                          <TypeDescriptor TypeName="System.String" IdentifierName="PersonalNr" Name="PeronalNr" />
+                          <TypeDescriptor TypeName="System.String" Name="Name" />
+                          <!-- TODO: Add TypeDescriptors when you add properties to Entity1. -->
+                          <TypeDescriptor Name="OrgID" TypeName="System.String" />
+                          <TypeDescriptor Name="Organisation" TypeName="System.String" />
+                          <TypeDescriptor Name="JobID" TypeName="System.String" />
+                          <TypeDescriptor Name="Job" TypeName="System.String" /></TypeDescriptors>
+                      </TypeDescriptor>
+                    </TypeDescriptors>
+                  </TypeDescriptor>
+                </Parameter>
+              </Parameters>
+              <MethodInstances>
+                <MethodInstance Type="Finder" ReturnParameterName="returnParameter" Default="true" Name="ReadList" DefaultDisplayName="Entity1 List" />
+              </MethodInstances>
+            </Method>
+            <!-- end finder method -->
+            <!-- start specific finder method -->
+            <Method Name="ReadItem">
+              <Parameters>
+                <Parameter Direction="In" Name="PersonalNr">
+                  <TypeDescriptor TypeName="System.String" Name="PersonalNr" IdentifierName="PersonalNr" />
+                </Parameter>
+                <Parameter Direction="Return" Name="returnParameter">
+                  <TypeDescriptor TypeName="SAPErpSharePoint.BdcSAPSAP.Employee, BdcSAPSAP" Name="Employee">
+                    <TypeDescriptors>
+                      <TypeDescriptor TypeName="System.String" IdentifierName="PersonalNr" Name="PersonalNr" />
+                      <TypeDescriptor TypeName="System.String" Name="Name" />
+                      <!-- TODO: Add TypeDescriptors when you add properties to Entity1. -->
+                      <TypeDescriptor Name="OrgID" TypeName="System.String" />
+                      <TypeDescriptor Name="Organisation" TypeName="System.String" />
+                      <TypeDescriptor Name="JobID" TypeName="System.String" />
+                      <TypeDescriptor Name="Job" TypeName="System.String" /></TypeDescriptors>
+                  </TypeDescriptor>
+                </Parameter>
+              </Parameters>
+              <MethodInstances>
+                <MethodInstance Type="SpecificFinder" ReturnParameterName="returnParameter" Default="true" Name="ReadItem" DefaultDisplayName="Read Entity1" />
+              </MethodInstances>
+            </Method>
+            <!-- end specific finder method -->
+          </Methods>
+        </Entity>
+      </Entities>
+    </LobSystem>
+  </LobSystems>
+</Model>
